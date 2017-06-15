@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/bash -xe
+
 if [[ $EUID -ne 0 ]]; then
     echo "{ \"failed\": true, \"msg\": \"This script should be run using sudo or as the root user\" }"
     exit 1
